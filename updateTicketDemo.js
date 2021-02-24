@@ -1,7 +1,7 @@
 const dotenv = require('dotenv')
 dotenv.config();
 const {Client} = require('@elastic/elasticsearch');
-const client = new Client({node: 'http://localhost:9200'});
+const client = new Client({node: `http://${process.env.DB_HOST}:9200`});
 
 const demo = async (req, res) => {
   const code = req.body.Code;

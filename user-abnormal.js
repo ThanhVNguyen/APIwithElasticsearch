@@ -7,7 +7,7 @@ const client = new Client({node: `http://${process.env.DB_HOST}:9200`});
 const getUserAbnormal = async (req, res) => {
     const value = req.body
     const { body } = await client.search({
-      index: 'sccd',
+      index: 'sccd', 
       type: 'user_abnormal',
       body: {
         query: { 
