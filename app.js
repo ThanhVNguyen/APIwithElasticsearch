@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
-const ticket = require('./ticket');
-const userAbnormal = require('./user-abnormal');
-const ticketDemo = require('./updateTicketDemo');
-const groupAlert = require('./groupAlert');
-const readFileData = require('./readFile');
+const ticket = require('./controller/ticket');
+const userAbnormal = require('./controller/user-abnormal');
+const ticketDemo = require('./controller/updateTicketDemo');
+const groupAlert = require('./controller/groupAlert');
+const readFileData = require('./controller/readFile');
 const dotenv = require('dotenv')
 dotenv.config();
 const bodyParser = require('body-parser');

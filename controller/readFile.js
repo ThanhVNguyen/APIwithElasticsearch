@@ -5259,7 +5259,6 @@ function processFile(req, res) {
     res.json ({
         data: b
     })
-    console.log(b);
 }   
 module.exports = {
     processFile,
